@@ -2,7 +2,6 @@
 <html lang="vi">
 
 <head>
-<<<<<<< HEAD
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Cửa hàng trái cây tươi ngon, giao hàng tận nơi">
@@ -53,6 +52,7 @@
       font-size: 1.2rem;
     }
 
+ 
     nav {
       text-align: center;
       padding: 10px 0;
@@ -69,12 +69,27 @@
 
     nav a:hover,
     nav a.active {
-      color: #000; /* Chuyển sang màu đen khi hover */
-      text-decoration: underline; /* Thêm gạch chân khi hover */
-      background: none; /* Bỏ nền khi hover */
+      background: #fff;
+      color: #4caf50;
+      border-radius: 25px;
     }
 
-   
+    nav a::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      background: #fff;
+      bottom: 5px;
+      left: 50%;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover::after {
+      width: 50%;
+      left: 25%;
+    }
+
     /* HERO CAROUSEL */
     #heroCarousel .carousel-item {
       height: 70vh;
@@ -242,118 +257,10 @@
 
     #backToTop:hover {
       background: #388e3c;
-=======
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Mặt hàng</title>
-
-  <link rel="stylesheet" href="../css/bootstrap.min.css" />
-  <script src="../js/jquery-3.7.1.min.js"></script>
-  <script src="../js/bootstrap.min.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
-
-  <style>
-    body {
-      font-family: 'Roboto', sans-serif;
-      background-color: #fefefe;
-      color: #333;
-    }
-
-    /* HEADER */
-    header {
-      background-color: #ffffff;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      padding: 10px 0;
-    }
-
-    .header-top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 30px;
-  max-width: 1140px;
-  margin: 0 auto;
-}
-
-.logo img {
-  height: 60px;
-  object-fit: contain;
-}
-
-    .hotline {
-      font-weight: bold;
-      color: #4caf50;
-      font-size: 18px;
-    }
-
-    nav {
-      background-color: #4caf50;
-    }
-
-    nav a {
-      color: #fff;
-      padding: 12px 18px;
-      display: inline-block;
-      text-decoration: none;
-      transition: background 0.3s;
-    }
-
-    nav a:hover {
-      background-color: #388e3c;
-    }
-
-    /* SẢN PHẨM */
-    .product-card {
-      border: 1px solid #eee;
-      border-radius: 8px;
-      transition: transform 0.3s ease;
-    }
-
-    .product-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
-    }
-
-    .product-card img {
-      height: 200px;
-      object-fit: cover;
-      border-radius: 8px 8px 0 0;
-    }
-
-    .card-body {
-      padding: 15px;
-    }
-
-    .card-title {
-      color: #2e7d32;
-      font-size: 18px;
-      font-weight: 600;
-    }
-
-    .btn-primary {
-      background-color: #4caf50;
-      border: none;
-    }
-
-    .btn-primary:hover {
-      background-color: #388e3c;
-    }
-
-    /* MAIN CONTENT */
-    main {
-      padding: 40px 20px;
-    }
-
-    main h2 {
-      text-align: center;
-      margin-bottom: 20px;
-      color: #2e7d32;
->>>>>>> 3d6a0950b84888bc7db64e3e773d47dd31e5f3b3
     }
 
     /* FOOTER */
     footer {
-<<<<<<< HEAD
       background: linear-gradient(135deg, #2e7d32, #1b5e20);
       color: #fff;
       padding: 40px 0;
@@ -376,24 +283,11 @@
       .header-top {
         flex-direction: column;
         gap: 15px;
-=======
-      background-color: #2e7d32;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
-
-    @media (max-width: 768px) {
-      .header-top {
-        flex-direction: column;
-        gap: 10px;
->>>>>>> 3d6a0950b84888bc7db64e3e773d47dd31e5f3b3
       }
 
       nav a {
         padding: 10px;
       }
-<<<<<<< HEAD
 
       #heroCarousel .carousel-caption h1 {
         font-size: 2.5rem;
@@ -407,253 +301,27 @@
         width: 200px;
       }
     }
-    body {
-      font-family: 'Roboto', sans-serif;
-      background-color: #f5f5f5;
-      color: #333;
-      margin: 0;
-      padding: 0;
-    }
-
-    /* HEADER */
-    header {
-      background: linear-gradient(135deg, #4caf50, #2e7d32);
-      color: #fff;
-      padding: 15px 0;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    }
-
-    .header-top {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0 40px;
-    }
-
-    .logo img {
-      height: 70px;
-      transition: transform 0.3s ease;
-    }
-
-    .logo img:hover {
-      transform: rotate(10deg) scale(1.1);
-    }
-
-    .hotline {
-      font-weight: 700;
-      font-size: 20px;
-      background: rgba(255, 255, 255, 0.2);
-      padding: 5px 15px;
-      border-radius: 20px;
-      transition: background 0.3s;
-    }
-
-    .hotline:hover {
-      background: rgba(255, 255, 255, 0.4);
-    }
-
-    nav {
-      text-align: center;
-      padding: 10px 0;
-    }
-
-    nav a {
-      color: #fff;
-      padding: 12px 20px;
-      text-decoration: none;
-      font-weight: 500;
-      transition: all 0.3s ease;
-      position: relative;
-    }
-
-    nav a:hover,
-    nav a.active {
-      background: #fff;
-      color: #4caf50;
-      border-radius: 25px;
-    }
-
-    nav a::after {
-      content: '';
-      position: absolute;
-      width: 0;
-      height: 2px;
-      background: #fff;
-      bottom: 5px;
-      left: 50%;
-      transition: all 0.3s ease;
-    }
-
-    nav a:hover::after {
-      width: 50%;
-      left: 25%;
-    }
-
-    /* Thanh tìm kiếm */
-    .search-wrapper {
-      display: flex;
-      justify-content: center;
-      padding: 10px 0;
-    }
-
-    .search-input {
-      width: 0;
-      padding: 10px;
-      border: none;
-      border-radius: 25px 0 0 25px;
-      outline: none;
-      transition: width 0.5s ease;
-      background: #fff;
-      box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
-
-    .search-input.active {
-      width: 350px;
-    }
-
-    .search-btn {
-      background: #fff;
-      color: #4caf50;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 0 25px 25px 0;
-      cursor: pointer;
-      transition: background 0.3s, color 0.3s;
-    }
-
-    .search-btn:hover {
-      background: #388e3c;
-      color: #fff;
-    }
-
-    /* MAIN CONTENT */
-    main {
-      padding: 50px 20px;
-      background: #fff;
-      border-radius: 15px;
-      margin: 20px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-    }
-
-    .card {
-      border: none;
-      border-radius: 15px;
-      overflow: hidden;
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
-
-    .card:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-    }
-
-    .card-img-top {
-      width: 100%;
-      height: 220px;
-      object-fit: cover;
-      transition: transform 0.3s;
-    }
-
-    .card:hover .card-img-top {
-      transform: scale(1.1);
-    }
-
-    .card-body {
-      padding: 20px;
-      text-align: center;
-    }
-
-    .card-title {
-      font-size: 1.5rem;
-      font-weight: 700;
-      color: #2e7d32;
-    }
-
-    .btn-primary {
-      background: #4caf50;
-      border: none;
-      border-radius: 25px;
-      padding: 10px 20px;
-      transition: background 0.3s;
-    }
-
-    .btn-primary:hover {
-      background: #388e3c;
-    }
-
-    /* Modal */
-    .modal-content {
-      border-radius: 15px;
-      overflow: hidden;
-    }
-
-    .modal-body img {
-      max-height: 400px;
-      border-radius: 10px;
-    }
-
-    /* Footer */
-    footer {
-      background: linear-gradient(135deg, #2e7d32, #1b5e20);
-      color: #fff;
-      padding: 30px 20px;
-      text-align: center;
-      border-top: 5px solid #4caf50;
-    }
-
-    .footer-info {
-      margin-bottom: 15px;
-      font-size: 1.1rem;
-    }
-
-    .social-icons a {
-      color: #fff;
-      margin: 0 15px;
-      font-size: 24px;
-      transition: color 0.3s;
-    }
-
-    .social-icons a:hover {
-      color: #ffd700;
-=======
->>>>>>> 3d6a0950b84888bc7db64e3e773d47dd31e5f3b3
-    }
   </style>
 </head>
 
 <body>
   <!-- Header -->
   <header>
-<<<<<<< HEAD
     <div class="header-top fade-in">
       <div class="logo"><img src="../img/logo.png" alt="Logo"></div>
       <div class="hotline">Hotline: 0989 123 456</div>
     </div>
     <nav class="fade-in">
       <a href="../html/index.html" class="active">Trang chủ</a>
-=======
-    <div class="header-top">
-      <div class="logo">
-        <img src="../img/logo.png" alt="Logo Cửa hàng trái cây" />
-      </div>
-      <div class="hotline">Hotline: 0989 123 456</div>
-    </div>
-    <nav class="text-center">
-      <a href="../html/index.html">Trang chủ</a>
->>>>>>> 3d6a0950b84888bc7db64e3e773d47dd31e5f3b3
       <a href="../html/product.html">Sản phẩm</a>
       <a href="../html/cart.html">Giỏ hàng</a>
       <a href="../html/account.html">Tài khoản</a>
       <a href="../html/login.html">Đăng nhập</a>
       <a href="../html/register.html">Đăng ký</a>
-<<<<<<< HEAD
       <a href="../html/naptien.html">Nạp tiền</a>
       <a href="../html/datgio.html">Đặt hàng</a>
     </nav>
-  
+    
   </header>
 
   <!-- HERO CAROUSEL -->
@@ -782,104 +450,38 @@
 
   <!-- FOOTER -->
   <footer>
-    <div class="footer-info">
-      <p>Địa chỉ: 123 Đường ABC, Quận XYZ, TP. HCM</p>
-      <p>Email: contact@traicay.com | Hotline: 0989 123 456</p>
-    </div>
-    <div class="social-icons">
+    <div class="social-footer">
       <a href="#"><i class="fab fa-facebook-f"></i></a>
       <a href="#"><i class="fab fa-instagram"></i></a>
       <a href="#"><i class="fab fa-youtube"></i></a>
     </div>
     <p>© 2025 Cửa hàng trái cây | Thiết kế bởi Nguyễn Hữu Thịnh</p>
-=======
-    </nav>
-  </header>
-
-  <!-- Danh sách sản phẩm -->
-  <div class="container mt-4">
-    <div class="row">
-      <!-- Ví dụ sản phẩm 1 -->
-      <div class="col-md-4 col-sm-6 mb-4">
-        <div class="card product-card">
-          <img src="../img/grape.jpg" class="card-img-top" alt="Nho" />
-          <div class="card-body">
-            <h5 class="card-title">Nho Mỹ</h5>
-            <p class="card-text">Tươi ngon, ngọt lịm, nhập khẩu 100%</p>
-            <a href="../html/product.html" class="btn btn-primary">Xem chi tiết</a>
-          </div>
-        </div>
-      </div>
-      <!-- Ví dụ sản phẩm 2 -->
-      <div class="col-md-4 col-sm-6 mb-4">
-        <div class="card product-card">
-          <img src="../img/apple.jpg" class="card-img-top" alt="Táo" />
-          <div class="card-body">
-            <h5 class="card-title">Táo</h5>
-            <p class="card-text">Tươi ngon, ngọt lịm, nhập khẩu 100%</p>
-            <a href="../html/product.html" class="btn btn-primary">Xem chi tiết</a>
-          </div>
-        </div>
-      </div>
-      <!-- Ví dụ sản phẩm 3 -->
-      <div class="col-md-4 col-sm-6 mb-4">
-        <div class="card product-card">
-          <img src="../img/jackfruit.jpg" class="card-img-top" alt="Mít" />
-          <div class="card-body">
-            <h5 class="card-title">Mít</h5>
-            <p class="card-text">Tươi ngon, ngọt lịm, nhập khẩu 100%</p>
-            <a href="../html/product.html" class="btn btn-primary">Xem chi tiết</a>
-          </div>
-        </div>
-      </div>
-      <!-- Các sản phẩm khác có thể được thêm tương tự... -->
-      <div class="col-md-4 col-sm-6 mb-4">
-        <div class="card product-card">
-          <img src="../img/banana.jpg" class="card-img-top" alt="Chuối" />
-          <div class="card-body">
-            <h5 class="card-title">Chuối</h5>
-            <p class="card-text">Tươi ngon, ngọt lịm, nhập khẩu 100%</p>
-            <a href="../html/product.html" class="btn btn-primary">Xem chi tiết</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 col-sm-6 mb-4">
-        <div class="card product-card">
-          <img src="../img/mango.jpg" class="card-img-top" alt="Xoài" />
-          <div class="card-body">
-            <h5 class="card-title">Xoài</h5>
-            <p class="card-text">Tươi ngon, ngọt lịm, nhập khẩu 100%</p>
-            <a href="../html/product.html" class="btn btn-primary">Xem chi tiết</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 col-sm-6 mb-4">
-        <div class="card product-card">
-          <img src="../img/orange.jpg" class="card-img-top" alt="Cam" />
-          <div class="card-body">
-            <h5 class="card-title">Cam</h5>
-            <p class="card-text">Tươi ngon, ngọt lịm, nhập khẩu 100%</p>
-            <a href="../html/product.html" class="btn btn-primary">Xem chi tiết</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Nội dung chính phụ (có thể dùng cho giới thiệu) -->
-  <main class="container">
-    <h2>Chào mừng đến với cửa hàng trái cây!</h2>
-    <p>
-      Khám phá những loại trái cây tươi ngon được chọn lọc kỹ lưỡng. Giao hàng tận nơi, cam kết chất lượng và độ tươi mới.
-    </p>
-    <p><strong>Nguyễn Hữu Thịnh</strong> - MSSV: <strong>23714291</strong></p>
-  </main>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2023 Cửa hàng trái cây | Thiết kế bởi Nguyễn Hữu Thịnh</p>
->>>>>>> 3d6a0950b84888bc7db64e3e773d47dd31e5f3b3
   </footer>
+
+  <!-- BACK TO TOP -->
+  <div id="backToTop"><i class="fas fa-chevron-up"></i></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    window.addEventListener('scroll', function() {
+      const backToTop = document.getElementById('backToTop');
+      if (window.scrollY > 200) {
+        backToTop.style.display = 'block';
+      } else {
+        backToTop.style.display = 'none';
+      }
+    });
+
+    document.getElementById('backToTop').addEventListener('click', function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    function searchProducts() {
+      const keyword = document.getElementById('searchInput').value.toLowerCase();
+      console.log('Tìm kiếm sản phẩm với từ khóa:', keyword);
+      // Thêm logic tìm kiếm ở đây nếu cần
+    }
+  </script>
 </body>
 
 </html>
